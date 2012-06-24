@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+        <meta name="Author" content="Igor Rzegocki" />
+        <meta name="Copyright" content="Copyright (c) 2012 Igor Rzegocki" />
+    
+        <meta name="Robots" content="index, follow" />
+        <meta name="Revisit-after" content="7 days" />
+
+	<title>Oferta | Garden Partner</title>
+	<link rel="stylesheet" type="text/css" media="all" href="css/jquery.fancybox.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/gp.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<!--[if lt IE 9]>
+		<script src="js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                var shown = false;
+                $(window).scrollTop(0);
+                jQuery('#gallery li a').fancybox();
+                setInterval(function() {
+                    if(shown != window.location.hash) {
+                        jQuery('a[href="' + window.location.hash + '"]').click();
+                        shown = window.location.hash;
+                    }
+                }, 100);
+                jQuery('#fancybox-close').click(function() {
+                    window.location.hash = '';
+                });
+            });
+        </script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 id="logo"><a href="kontakt.html">Garden Partner</a></h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="kontakt.html">Strona główna</a></li>
+                    <li><a href="onas.html">O nas</a></li>
+                    <li class="selected"><a href="oferta.html">Oferta</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            <section class="services">
+                <div>
+                    <h2>Galeria prac ogrodniczych</h2>
+                    <ul class="gallery">
+                        <li>
+                            <img src="images/gallery-big/pielegnacja_zieleni-sq.png" alt="Dekoracja" width="67" height="67" />
+                            <div>
+                                <h3>Pielęgnacja zieleni</h3>
+                                <a class="button" href="/galeria.html#byliny-w-ogrodzie"><span>Zobacz galerię &gt;</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/gallery-big/uslugi_ogrodnicze-sq.png" alt="Dekoracja" width="67" height="67" />
+                            <div>
+                                <h3>Usługi ogrodnicze</h3>
+                                <a class="button" href="/galeria.html#aranzacja-ogrodow"><span>Zobacz galerię &gt;</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/gallery-big/zakladanie_ogrodow-sq.png" alt="Dekoracja" width="67" height="67" />
+                            <div>
+                                <h3>Zakładanie ogrodów</h3>
+                                <a class="button" href="/galeria.html#aranzacja-ogrodow2"><span>Zobacz galerię &gt;</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="content">
+                <div>
+                    <h2>Oferta</h2>
+                    <p>Poniżej przedstawiamy listę najpopularniejszych usług ogrodniczych, które świadczymy.</p>
+                    <p>Jeżeli poszukiwana przez Ciebie usługa nie widnieje na liście, nie oznacza to, że jej nie
+                    wykonujemy. Potrzebujesz więcej informacji?</p>
+                    <a class="button contact" href="kontakt.html"><span>Napisz do nas &gt;</span></a>
+                    <ul id="gallery">
+                        <li>
+                            <a rel="oferta" href="#prowadzenie_ogrodow">
+                                <img src="images/gallery/prowadzenie_ogrodow.png" width="180" height="69" alt="Dekoracja" />
+                                Prowadzenie ogrodów
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#zakladanie_trawnikow">
+                                <img src="images/gallery/zakladanie_trawnikow.png" width="180" height="69" alt="Dekoracja" />
+                                Zakładanie trawników
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#nasadzenia_roslin">
+                                <img src="images/gallery/nasadzenia_roslin.png" width="180" height="69" alt="Dekoracja" />
+                                Nasadzenia roślin
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#formowanie_drzew_i_krzewow">
+                                <img src="images/gallery/formowanie_drzew_i_krzewow.png" width="180" height="69" alt="Dekoracja" />
+                                Formowanie drzew i krzewów
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#przycinanie_zywoplotow">
+                                <img src="images/gallery/przycinanie_zywoplotow.png" width="180" height="69" alt="Dekoracja" />
+                                Przycinanie żywopłotów
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#koszenie_trawy">
+                                <img src="images/gallery/koszenie_trawy.png" width="180" height="69" alt="Dekoracja" />
+                                Koszenie trawy
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#aeracja_i_wertykulacja_trawnikow">
+                                <img src="images/gallery/aeracja_i_wertykulacja_trawnikow.png" width="180" height="69" alt="Dekoracja" />
+                                Aeracja i wertykulacja trawników
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#wycinanie_zarosli">
+                                <img src="images/gallery/wycinanie_zarosli.png" width="180" height="69" alt="Dekoracja" />
+                                Wycinanie zarośli
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#wycinka_drzew_i_krzewow">
+                                <img src="images/gallery/wycinka_drzew_i_krzewow.png" width="180" height="69" alt="Dekoracja" />
+                                Wycinka drzew i krzewów
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#rekultywacja_terenow_zieleni">
+                                <img src="images/gallery/rekultywacja_terenow_zieleni.png" width="180" height="69" alt="Dekoracja" />
+                                Rekultywacja terenów zieleni
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#opryski">
+                                <img src="images/gallery/opryski.png" width="180" height="69" alt="Dekoracja" />
+                                Opryski
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#montaz_i_konserwacja_systemow_nawadniajacych">
+                                <img src="images/gallery/montaz_i_konserwacja_systemow_nawadniajacych.png" width="180" height="69" alt="Dekoracja" />
+                                Montaż i konserwacja systemów nawadniających
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#czyszczenie_oczek_wodnych">
+                                <img src="images/gallery/czyszczenie_oczek_wodnych.png" width="180" height="69" alt="Dekoracja" />
+                                Czyszczenie oczek wodnych
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="oferta" href="#wywoz_odpadow">
+                                <img src="images/gallery/wywoz_odpadow.png" width="180" height="69" alt="Dekoracja" />
+                                Wywóz odpadów
+                            </a>
+                        </li>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="kontakt.html">Strona główna</a></li>
+                    <li><a href="onas.html">O nas</a></li>
+                    <li class="selected"><a href="oferta.html">Oferta</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <ul class="partners">
+                <li class="gp"><a href="kontakt.html">Garden Partner</a></li>
+                <li class="ptd"><a href="http://www.ptd.pl/" target="_blank">Polskie Towarzystwo Dendrologiczne</a></li>
+            </ul>
+        </footer>
+    </div>
+    <div id="popups">
+        <div class="popup" id="prowadzenie_ogrodow">
+            <img src="images/gallery/prowadzenie_ogrodow.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Prowadzenie ogrodów</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="zakladanie_trawnikow">
+            <img src="images/gallery/zakladanie_trawnikow.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Zakładanie trawników</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="nasadzenia_roslin">
+            <img src="images/gallery/nasadzenia_roslin.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Nasadzenia roślin</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="formowanie_drzew_i_krzewow">
+            <img src="images/gallery/formowanie_drzew_i_krzewow.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Formowanie drzew i krzewów</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="przycinanie_zywoplotow">
+            <img src="images/gallery/przycinanie_zywoplotow.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Przycinanie żywopłotów</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="koszenie_trawy">
+            <img src="images/gallery/koszenie_trawy.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Koszenie trawy</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="aeracja_i_wertykulacja_trawnikow">
+            <img src="images/gallery/aeracja_i_wertykulacja_trawnikow.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Aeracja i wertykulacja trawników</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="wycinanie_zarosli">
+            <img src="images/gallery/wycinanie_zarosli.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Wycinanie zarośli</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="wycinka_drzew_i_krzewow">
+            <img src="images/gallery/wycinka_drzew_i_krzewow.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Wycinka drzew i krzewów</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="rekultywacja_terenow_zieleni">
+            <img src="images/gallery/rekultywacja_terenow_zieleni.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Rekultywacja terenów zieleni</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="opryski">
+            <img src="images/gallery/opryski.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Opryski</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="montaz_i_konserwacja_systemow_nawadniajacych">
+            <img src="images/gallery/montaz_i_konserwacja_systemow_nawadniajacych.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Montaż i konserwacja systemów nawadniających</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="czyszczenie_oczek_wodnych">
+            <img src="images/gallery/czyszczenie_oczek_wodnych.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Czyszczenie oczek wodnych</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="wywoz_odpadow">
+            <img src="images/gallery/wywoz_odpadow.jpg" width="640" height="300" alt="Dekoracja" />
+            <h3>Wywóz odpadów</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+    </div>
+</body>
+</html>

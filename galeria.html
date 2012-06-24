@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+        <meta name="Author" content="Igor Rzegocki" />
+        <meta name="Copyright" content="Copyright (c) 2012 Igor Rzegocki" />
+    
+        <meta name="Robots" content="index, follow" />
+        <meta name="Revisit-after" content="7 days" />
+
+	<title>Galeria | Garden Partner</title>
+	<link rel="stylesheet" type="text/css" media="all" href="css/jquery.fancybox.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/gp.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<!--[if lt IE 9]>
+		<script src="js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                var shown = false;
+                $(window).scrollTop(0);
+                jQuery('#gallery li a').fancybox();
+                setInterval(function() {
+                    if(shown != window.location.hash) {
+                        jQuery('a[href="' + window.location.hash + '"]').click();
+                        shown = window.location.hash;
+                    }
+                }, 100);
+                jQuery('#fancybox-close').click(function() {
+                    window.location.hash = '';
+                });
+            });
+        </script></head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 id="logo"><a href="start.html">Garden Partner</a></h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="start.html">Strona główna</a></li>
+                    <li><a href="onas.html">O nas</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li class="selected"><a href="galeria.html">Galeria</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            <section class="services">
+                <div>
+                    <h2>Usługi ogrodnicze</h2>
+                    <ul class="offer">
+                        <li><a href="oferta.html#prowadzenie_ogrodow">Prowadzenie ogrodów</a></li>
+                        <li><a href="oferta.html#zakladanie_trawnikow">Zakładanie trawników</a></li>
+                        <li><a href="oferta.html#nasadzenia_roslin">Nasadzenia roślin</a></li>
+                        <li><a href="oferta.html#formowanie_drzew_i_krzewow">Formowanie drzew i krzewów</a></li>
+                    </ul>
+                    <a class="button" href="oferta.html"><span>Zobacz pełną ofertę &gt;</span></a>
+                </div>
+            </section>
+            <section class="content">
+                <div>
+                    <h2>Galeria</h2>
+                    <p>Witamy w galerii,</p>
+                    <p>Tutaj znajdziecie Państwo zdjęcia fragmentów kilku ogrodów, w których wykonywaliśmy rózne prace
+                    ogrodnicze – formowanie drzew, nasadzenia różnych gatunków roślin, rozmnażanie rzadkich okazów,
+                    osuszanie terenów podmokłych (drenacja).</p>
+                    <ul id="gallery">
+                        <li>
+                            <a href="#byliny-w-ogrodzie" rel="pielegnacja-zieleni">
+                                <img src="images/gallery-big/pielegnacja_zieleni.png" width="180" height="119" alt="Dekoracja" />
+                                Pielęgnacja zieleni
+                            </a>
+			    <a href="#cyprysik" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#donice-na-tarasie" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#formowanie-drzew" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#granitowe-sciezki" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#jalowiec-plozacy" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#jarzebina" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#kolorowy-ogrod" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#kwiaty-na-tarasie" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#naturalna-architektura-ogrodowa" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#opryski-roslin" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#pergola-ogrodowa" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#rabaty-kwiatowe" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#swierk-conica" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#tuje-szmaragdowe" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#zakladanie-rabat" class="hidden"  rel="pielegnacja-zieleni"></a>
+			    <a href="#zywotniki" class="hidden"  rel="pielegnacja-zieleni"></a>
+                        </li>
+                        <li>
+                            <a href="#aranzacja-ogrodow" rel="uslugi-ogrodnicze">
+                                <img src="images/gallery-big/uslugi_ogrodnicze.png" width="180" height="119" alt="Dekoracja" />
+                                Usługi ogrodnicze
+                            </a>
+			    <a href="#architektura-ogrodowa" class="hidden" rel="uslugi-ogrodnicze"></a>
+                            <a href="#koszenie-trawnikow" class="hidden" rel="uslugi-ogrodnicze"></a>
+                            <a href="#koszenie-trawy" class="hidden" rel="uslugi-ogrodnicze"></a>
+                        </li>
+                        <li>
+                            <a href="#aranzacja-ogrodow2" rel="zakladanie-ogrodow">
+                                <img src="images/gallery-big/zakladanie_ogrodow.png" width="180" height="119" alt="Dekoracja" />
+                                Zakładanie ogrodów
+                            </a>
+                            <a href="#aranzacja-przydomowa" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#drenaze-ogrodow" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#egzotyczne-sadzonki" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#formowanie-roslin" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#irysy" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#jodla-koreanska" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#kaskada" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#melioracja-w-ogrodzie" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#metasekwoja" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#oczko-wodne" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#osuszanie-ogrodu" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#oswietlenie-ogrodowe" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#piekne-irysy" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#rozmnazanie-generatywne" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#sloneczny-ogrod" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#tuje-kuliste" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#zakladanie-trawnika" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#zakladanie-trawnikow" class="hidden" rel="zakladanie-ogrodow"></a>
+                            <a href="#zielony-ogrod" class="hidden" rel="zakladanie-ogrodow"></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="start.html">Strona główna</a></li>
+                    <li><a href="onas.html">O nas</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li class="selected"><a href="galeria.html">Galeria</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <ul class="partners">
+                <li class="gp"><a href="start.html">Garden Partner</a></li>
+                <li class="ptd"><a href="http://www.ptd.pl/" target="_blank">Polskie Towarzystwo Dendrologiczne</a></li>
+            </ul>
+        </footer>
+    </div>
+    <div id="popups">
+        <div class="popup" id="byliny-w-ogrodzie">
+            <img src="images/galleries/pielegnacja-zieleni/byliny-w-ogrodzie.jpg" alt="Dekoracja" />
+            <h3>Byliny w ogrodzie</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="cyprysik">
+            <img src="images/galleries/pielegnacja-zieleni/cyprysik.jpg" alt="Dekoracja" />
+            <h3>Cyprysik</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="donice-na-tarasie">
+            <img src="images/galleries/pielegnacja-zieleni/donice-na-tarasie.jpg" alt="Dekoracja" />
+            <h3>Donice na tarasie</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="formowanie-drzew">
+            <img src="images/galleries/pielegnacja-zieleni/formowanie-drzew.jpg" alt="Dekoracja" />
+            <h3>Formowanie drzew</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="granitowe-sciezki">
+            <img src="images/galleries/pielegnacja-zieleni/granitowe-sciezki.jpg" alt="Dekoracja" />
+            <h3>Granitowe ścieżki</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="jalowiec-plozacy">
+            <img src="images/galleries/pielegnacja-zieleni/jalowiec-plozacy.jpg" alt="Dekoracja" />
+            <h3>Jałowiec płożący</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="jarzebina">
+            <img src="images/galleries/pielegnacja-zieleni/jarzebina.jpg" alt="Dekoracja" />
+            <h3>Jarzębina</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="kolorowy-ogrod">
+            <img src="images/galleries/pielegnacja-zieleni/kolorowy-ogrod.jpg" alt="Dekoracja" />
+            <h3>Kolorowy ogród</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="kwiaty-na-tarasie">
+            <img src="images/galleries/pielegnacja-zieleni/kwiaty-na-tarasie.jpg" alt="Dekoracja" />
+            <h3>Kwiaty na tarasie</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="naturalna-architektura-ogrodowa">
+            <img src="images/galleries/pielegnacja-zieleni/naturalna-architektura-ogrodowa.jpg" alt="Dekoracja" />
+            <h3>Naturalna architektura ogrodowa</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="opryski-roslin">
+            <img src="images/galleries/pielegnacja-zieleni/opryski-roslin.jpg" alt="Dekoracja" />
+            <h3>Opryski roślin</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="pergola-ogrodowa">
+            <img src="images/galleries/pielegnacja-zieleni/pergola-ogrodowa.jpg" alt="Dekoracja" />
+            <h3>Pergola ogrodowa</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="rabaty-kwiatowe">
+            <img src="images/galleries/pielegnacja-zieleni/rabaty-kwiatowe.jpg" alt="Dekoracja" />
+            <h3>Rabaty kwiatowe</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="swierk-conica">
+            <img src="images/galleries/pielegnacja-zieleni/swierk-conica.jpg" alt="Dekoracja" />
+            <h3>Świerk conica</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="tuje-szmaragdowe">
+            <img src="images/galleries/pielegnacja-zieleni/tuje-szmaragdowe.jpg" alt="Dekoracja" />
+            <h3>Tuje szmaragdowe</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="zakladanie-rabat">
+            <img src="images/galleries/pielegnacja-zieleni/zakladanie-rabat.jpg" alt="Dekoracja" />
+            <h3>Zakładanie rabat</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="zywotniki">
+            <img src="images/galleries/pielegnacja-zieleni/zywotniki.jpg" alt="Dekoracja" />
+            <h3>Żywotniki</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="aranzacja-ogrodow">
+            <img src="images/galleries/uslugi-ogrodnicze/aranzacja-ogrodow.jpg" alt="Dekoracja" />
+            <h3>Aranżacja ogrodów</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="architektura-ogrodowa">
+            <img src="images/galleries/uslugi-ogrodnicze/architektura-ogrodowa.jpg" alt="Dekoracja" />
+            <h3>Architektura ogrodowa</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="koszenie-trawnikow">
+            <img src="images/galleries/uslugi-ogrodnicze/koszenie-trawnikow.jpg" alt="Dekoracja" />
+            <h3>Koszenie trawników</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="koszenie-trawy">
+            <img src="images/galleries/uslugi-ogrodnicze/koszenie-trawy.jpg" alt="Dekoracja" />
+            <h3>Koszenie trawy</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="aranzacja-ogrodow2">
+            <img src="images/galleries/zakladanie-ogrodow/aranzacja-ogrodow2.jpg" alt= />
+            <h3>Aranżacja Ogrodów</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="aranzacja-przydomowa">
+            <img src="images/galleries/zakladanie-ogrodow/aranzacja-przydomowa.jpg" alt= />
+            <h3>Aranżacja przydomowa</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="drenaze-ogrodow">
+            <img src="images/galleries/zakladanie-ogrodow/drenaze-ogrodow.jpg" alt= />
+            <h3>Drenaże ogrodów</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="egzotyczne-sadzonki">
+            <img src="images/galleries/zakladanie-ogrodow/egzotyczne-sadzonki.jpg" alt= />
+            <h3>Egzotyczne sadzonki</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="formowanie-roslin">
+            <img src="images/galleries/zakladanie-ogrodow/formowanie-roslin.jpg" alt= />
+            <h3>Formowanie roślin</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="irysy">
+            <img src="images/galleries/zakladanie-ogrodow/irysy.jpg" alt= />
+            <h3>Irysy</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="jodla-koreanska">
+            <img src="images/galleries/zakladanie-ogrodow/jodla-koreanska.jpg" alt= />
+            <h3>Jodła koreańska</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="kaskada">
+            <img src="images/galleries/zakladanie-ogrodow/kaskada.jpg" alt= />
+            <h3>Kaskada</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="melioracja-w-ogrodzie">
+            <img src="images/galleries/zakladanie-ogrodow/melioracja-w-ogrodzie.jpg" alt= />
+            <h3>Melioracja w ogrodzie</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="metasekwoja">
+            <img src="images/galleries/zakladanie-ogrodow/metasekwoja.jpg" alt= />
+            <h3>Metasekwoja</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="oczko-wodne">
+            <img src="images/galleries/zakladanie-ogrodow/oczko-wodne.jpg" alt= />
+            <h3>Oczko wodne</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="osuszanie-ogrodu">
+            <img src="images/galleries/zakladanie-ogrodow/osuszanie-ogrodu.jpg" alt= />
+            <h3>Osuszanie ogrodu</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="oswietlenie-ogrodowe">
+            <img src="images/galleries/zakladanie-ogrodow/oswietlenie-ogrodowe.jpg" alt= />
+            <h3>Oświetlenie ogrodowe</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="piekne-irysy">
+            <img src="images/galleries/zakladanie-ogrodow/piekne-irysy.jpg" alt= />
+            <h3>Piekne irysy</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="rozmnazanie-generatywne">
+            <img src="images/galleries/zakladanie-ogrodow/rozmnazanie-generatywne.jpg" alt= />
+            <h3>Rozmnażanie generatywne</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="sloneczny-ogrod">
+            <img src="images/galleries/zakladanie-ogrodow/sloneczny-ogrod.jpg" alt= />
+            <h3>Słoneczny ogród</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="tuje-kuliste">
+            <img src="images/galleries/zakladanie-ogrodow/tuje-kuliste.jpg" alt= />
+            <h3>Tuje kuliste</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="zakladanie-trawnika">
+            <img src="images/galleries/zakladanie-ogrodow/zakladanie-trawnika.jpg" alt= />
+            <h3>Zakładanie trawnika</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="zakladanie-trawnikow">
+            <img src="images/galleries/zakladanie-ogrodow/zakladanie-trawnikow.jpg" alt= />
+            <h3>Zakładanie trawników</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+        <div class="popup" id="zielony-ogrod">
+            <img src="images/galleries/zakladanie-ogrodow/zielony-ogrod.jpg" alt= />
+            <h3>Zielony ogród</h3>
+            <p>Lorem ipsum dolor se semi dolce ninu mi dolce ninu hama laki, lorem ipsum dolor sami noe winos la fakes.
+            Lorem ipsum dolori dolce.</p>
+        </div>
+    </div>
+</body>
+</html>
